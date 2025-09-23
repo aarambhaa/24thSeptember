@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #4a2c2a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #ff4081;
+      margin-bottom: 20px;
+      word-wrap: break-word;
+    }
+
+    .heart {
+      font-size: 4rem;
+      color: #ff4b6e;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .message {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      width: 100%;
+      max-width: 600px;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .heart {
+        font-size: 3rem;
+      }
+      .message {
+        font-size: 1rem;
+      }
+      .card {
+        padding: 15px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .heart {
+        font-size: 2.5rem;
+      }
+      .message {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy 24th September Love ❤️</h1>
+  <div class="heart">💖</div>
+  <div class="card">
+    <p class="message">
+      One year since me and my babbu restarted it all <br>
+      And I don't regret a thing that has happened maya. I love you the most  ❤️
+      Click below for little surprises hehehe
+    </p>
+    <p> <a href="letter.html"> A digital letter to my baby </a> </p>
+    <p> <a href="video.html"> A small video </a> </p>
+  </div>
+</body>
+</html>

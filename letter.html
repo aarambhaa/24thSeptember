@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Digital Letter</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+      color: #4a0033;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .letter-box {
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 20px;
+      background: #fff0f5;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      font-size: 1.2rem;
+      line-height: 1.6;
+      display: none;
+      margin-top: 20px;
+    }
+    .btn {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #ff85c1;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .letter-box {
+        font-size: 1rem;
+        padding: 15px;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 10px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 A Digital Letter For My Baby 💌</h1>
+  <button class="btn" onclick="openLetter()">Read My Letter</button>
+
+  <div class="letter-box" id="letter">
+    <p>My love,</p>
+    <p>
+      This past year with you has been the most beautiful yet the most difficult chapter of our lives. So many fights and arguments and quarrels, yet we have stood strong like no one else. We've spent 365 days and it has been rough but there is no doubt that it has been so beautiful too maya. Thank you for everything my baby ❤️. Hope the road ahead is much smoother but with some fights and arguments or else it won't be that fun 😕. 
+      I am also so sorry for everything that I have done wrong and I promise I will improve in all aspects maya.
+    </p>
+    <p>
+      Here’s to many more years of some jhagda, more laughter, more adventures, and endless love together. 🫀
+    </p>
+    <p>Forever yours,</p>
+    <p><strong> Your bebu</strong></p>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById("letter").style.display = "block";
+    }
+  </script>
+</body>
+</html>
